@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="/home/nandhini/Downloads/Blue Wood.png"  ></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">PLACES</a></li>
+                    <li><a href="">BACKAGES</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>WORD'S BEST TRAVELLING CENTERS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse reprehenderit obcaecati optio sint dolor minima illo illum soluta facilis. Iure.</p>
+             <a href=""class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+    <!-----javascript for toggle menu----->
+    <script>
+
+        var navlinks =document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right ="0";
+        }
+        function hidemenu(){
+            navlinks.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
